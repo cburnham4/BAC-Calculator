@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    PRODUCTION AdMob configuration for BAC Calculator
+    Publisher / account: ca-app-pub-8223005482588566
+
+    Debug builds override these values with Google's official test IDs via
+    app/src/debug/res/values/ad_config.xml
+
+    TODOs before release upload:
+    - Replace admob_app_id with the real AdMob App ID (~ form) from AdMob console
+      for this app (package letshangllc.baccalculator). The old APK did not embed
+      an APPLICATION_ID meta-data value.
+    - Confirm admob_banner_unit_id matches the live banner unit in AdMob.
+      The value below was recovered from the previously published APK
+      (ca-app-pub-8223005482588566/2934293534). If that unit was deleted or
+      replaced, create a new banner unit and update this file.
+-->
+<resources>
+    <!-- TODO: set real AdMob App ID from AdMob console (format ca-app-pub-8223005482588566~XXXXXXXXXX) -->
+    <string name="admob_app_id" translatable="false">ca-app-pub-8223005482588566~TODO_REPLACE_APP_ID</string>
+
+    <!-- Banner unit recovered from old release APK; verify in AdMob before shipping -->
+    <string name="admob_banner_unit_id" translatable="false">ca-app-pub-8223005482588566/2934293534</string>
+
+    <!-- Legacy resource name kept for compatibility -->
+    <string name="admob_id" translatable="false">ca-app-pub-8223005482588566/2934293534</string>
+</resources>

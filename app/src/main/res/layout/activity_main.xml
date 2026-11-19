@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context="letshangllc.baccalculator.MainActivity"
-    >
+    tools:context="letshangllc.baccalculator.MainActivity">
 
     <ScrollView
+        android:id="@+id/content_scroll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_above="@+id/ad_layout">
+        android:layout_above="@+id/ad_layout"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,7 +20,15 @@
             android:orientation="vertical"
             android:layout_margin="@dimen/activity_horizontal_margin">
 
-
+            <TextView
+                android:id="@+id/tv_disclaimer_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:text="@string/disclaimer_footer"
+                android:textColor="@color/secondary_text"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/tv_bac"
@@ -27,98 +36,99 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:visibility="gone"
-                android:textSize="@dimen/bac_text_size"
-                />
+                android:textSize="@dimen/bac_text_size" />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/input_layout_weight"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/input_weight"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Weight"
-                    android:inputType="numberDecimal"/>
+                    android:hint="@string/hint_weight"
+                    android:inputType="numberDecimal" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/input_layout_hours"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/input_hours"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Drinking Time (Hours)"
-                    android:inputType="numberDecimal"/>
+                    android:hint="@string/hint_hours"
+                    android:inputType="numberDecimal" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/input_layout_shots"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/input_shots"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Shots"
-                    android:inputType="number"/>
+                    android:hint="@string/hint_shots"
+                    android:inputType="number" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/input_layout_beer"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/input_beer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Beer"
-                    android:inputType="number"/>
+                    android:hint="@string/hint_beer"
+                    android:inputType="number" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/input_layout_wine"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/input_wine"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Glasses of Wine"
-                    android:inputType="number"/>
+                    android:hint="@string/hint_wine"
+                    android:inputType="number" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Spinner
                 android:id="@+id/spinner_gender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_top_between_items"/>
+                android:layout_marginTop="@dimen/margin_top_between_items" />
 
-
-            <Button
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCalculateBAC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/btnCalculateBAC"
-                android:text="Calculate BAC"/>
+                android:layout_marginTop="@dimen/margin_top_between_items"
+                android:text="@string/btn_calculate" />
 
         </LinearLayout>
     </ScrollView>
 
-
-    <include layout="@layout/ad_layout"></include>
-
-
+    <include layout="@layout/ad_layout" />
 
 </RelativeLayout>
