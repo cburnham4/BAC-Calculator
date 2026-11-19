@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    PRODUCTION AdMob configuration for BAC Calculator
+    AdMob app: "BAC Calculator" (letshangllc.baccalculator)
+    Publisher: ca-app-pub-8223005482588566
+    App ID:    ca-app-pub-8223005482588566~1457560333
+
+    Debug builds override these with Google's official test IDs via
+    app/src/debug/res/values/ad_config.xml
+
+    Slot mapping (from AdMob console CSV):
+    ======================================
+    Screen / slot          | AdMob unit name | Unit ID
+    MainActivity (bottom)  | Banner          | ca-app-pub-8223005482588566/2934293534
+-->
+<resources>
+    <string name="admob_app_id" translatable="false">ca-app-pub-8223005482588566~1457560333</string>
+
+    <!-- MainActivity bottom banner — AdMob unit name: "Banner" -->
+    <string name="admob_banner_unit_id" translatable="false">ca-app-pub-8223005482588566/2934293534</string>
+
+    <!-- Legacy resource name kept for compatibility -->
+    <string name="admob_id" translatable="false">ca-app-pub-8223005482588566/2934293534</string>
+</resources>

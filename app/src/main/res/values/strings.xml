@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BAC Calculator</string>
+
+    <string name="hint_weight">Weight (lbs)</string>
+    <string name="hint_hours">Drinking Time (Hours)</string>
+    <string name="hint_shots">Shots</string>
+    <string name="hint_beer">Beer</string>
+    <string name="hint_wine">Glasses of Wine</string>
+    <string name="btn_calculate">Calculate BAC</string>
+    <string name="bac_result">BAC: %.3f</string>
+    <string name="error_blank_fields">One or more options is blank</string>
+
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <!-- Alcohol / legal disclaimer: estimates only; not for deciding whether to drive -->
+    <string name="disclaimer_title">Important disclaimer</string>
+    <string name="disclaimer_body">This app is intended for adults of legal drinking age (18+ / 21+ depending on your location).\n\nBAC results are estimates only and can be inaccurate. Do not use this app to decide whether you are safe to drive or operate machinery. Never drink and drive.</string>
+    <string name="disclaimer_accept">I understand</string>
+    <string name="disclaimer_footer">Estimates only. Not for deciding whether to drive. 18+/21+.</string>
+</resources>
