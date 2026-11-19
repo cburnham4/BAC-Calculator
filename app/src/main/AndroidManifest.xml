@@ -15,7 +15,7 @@
         android:enableOnBackInvokedCallback="true"
         tools:targetApi="36">
 
-        <!-- AdMob App ID (test ID in debug builds; replace TODO in release ad_config.xml) -->
+        <!-- AdMob App ID (Google test ID in debug via src/debug; real ID in release ad_config) -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/admob_app_id" />
